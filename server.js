@@ -37,10 +37,7 @@ const loadCSVData = async (filePath, schema) => {
 
 app.use(express.static('public'));
 
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect("mongodb+srv://NRSRaju:Raju9398@cluster0.0n9qgog.mongodb.net/school-management?retryWrites=true&w=majority&appName=Cluster0")
 .then(async () => {
   console.log('Connected to MongoDB');
   await User.createDummyUser();
