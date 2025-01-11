@@ -10,6 +10,7 @@ const authRoutes = require('./routes/authRoutes');
 const User = require('./models/User');
 const Transaction = require('./models/Transaction');
 
+
 dotenv.config();
 
 const app = express();
