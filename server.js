@@ -16,7 +16,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Your Vite frontend URL
+    origin: 'https://manage-school-payments.netlify.app/', // Your Vite frontend URL
     credentials: true
 }));
 app.use(express.json());
